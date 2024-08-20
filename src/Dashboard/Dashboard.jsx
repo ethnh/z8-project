@@ -265,8 +265,8 @@ const Dashboard = () => {
             {/* dahsboard content */}
 
 
-           
-            <div className="w-full h-screen overflow-y-scroll bg-[#f3f4f7] border px-4">
+
+            <div className="w-full h-screen overflow-y-scroll bg-[#f3f4f7] border">
                 <DashNav></DashNav>
                 <div className="mt-20">
                     <Outlet></Outlet>

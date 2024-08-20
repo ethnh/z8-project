@@ -5,9 +5,9 @@ import SalesDetails from '../../Component/Sales/Sales';
 
 const DashboardHome = () => {
   return (
-    <div className="bg-gray-100 p-6">
+    <div className="bg-gray-100 p-7">
       <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         <Card
           title="Total User"
           value="40,689"
@@ -45,9 +45,9 @@ const DashboardHome = () => {
           iconColor="text-red-500"
         />
       </div>
-    <div className='mt-12'>
+      <div className='mt-12'>
         <SalesDetails></SalesDetails>
-    </div>
+      </div>
     </div>
   );
 };
