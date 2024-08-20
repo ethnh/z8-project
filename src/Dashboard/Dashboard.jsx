@@ -1,24 +1,33 @@
 import { NavLink, Outlet } from "react-router-dom";
 import DashNav from "./DashNav";
-import { HiOutlineSquares2X2 } from "react-icons/hi2";
-import { RiContactsBook2Line } from "react-icons/ri";
-import { PiTicket } from "react-icons/pi";
-import { PiChatsCircleBold } from "react-icons/pi";
-import { HiOutlineUsers } from "react-icons/hi2";
-import { PiNotePencilThin } from "react-icons/pi";
-import { IoPricetagsOutline } from "react-icons/io5";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { AiOutlineProduct } from "react-icons/ai";
+import { GrFavorite } from "react-icons/gr";
+import { LuMessageCircle } from "react-icons/lu";
+import { GoListUnordered } from "react-icons/go";
+import { MdOutlineBusiness } from "react-icons/md";
+import { CiFileOn } from "react-icons/ci";
+import { CiCalendar } from "react-icons/ci";
+import { MdOutlineFeed } from "react-icons/md";
+import { LuListTodo } from "react-icons/lu";
+import { MdContactPage } from "react-icons/md";
+import { TbInvoice } from "react-icons/tb";
+import { LiaElementor } from "react-icons/lia";
+import { CgProfile } from "react-icons/cg";
+import { CiViewTable } from "react-icons/ci";
+import { IoIosHelpCircleOutline } from "react-icons/io";
+import { CiLogout } from "react-icons/ci";
 
 
 const Dashboard = () => {
     const isAdmin = true;
-    const chat = true;
     return (
         <div className="lg:flex">
             <div className="lg:w-56 lg:h-screen overflow-y-scroll no-scrollbar bg-[#FFFFFF]">
-                <div className="my-7 ml-6 text-[#FFFFFF] text-lg">
-                    <h1 className="text-black"><span className="text-[#3048DF]">Dash</span>Stack</h1>
+                <div className="my-7 text-center text-[#FFFFFF] text-lg">
+                    <h1 className="text-[#202224] text-[20px] font-bold"><span className="text-[#3048DF]">Dash</span>Stack</h1>
                 </div>
-                <div className="menu p-0 space-y-3">
+                <div className="menu space-y-3 p-4">
                     {
                         isAdmin ? <>
                             <button>
@@ -26,11 +35,11 @@ const Dashboard = () => {
                                     to="/dashboard/dashboardHome"
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 w-full bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 w-full text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full rounded-md bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineSquares2X2 className="text-[20px]" />
+                                    <LuLayoutDashboard className="text-[20px]" />
                                     <span>Dashboard</span>
                                 </NavLink>
                             </button>
@@ -39,11 +48,11 @@ const Dashboard = () => {
                                     to='/dashboard/a'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <RiContactsBook2Line className="text-[20px]" />
+                                    <AiOutlineProduct className="text-[20px]" />
                                     <span> Products</span>
                                 </NavLink>
                             </button>
@@ -52,11 +61,11 @@ const Dashboard = () => {
                                     to='/dashboard/b'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <PiTicket className="text-[20px]" />
+                                    <GrFavorite className="text-[20px]" />
                                     <span> Favourites</span>
                                 </NavLink>
                             </button>
@@ -65,11 +74,11 @@ const Dashboard = () => {
                                     to='/dashboard/c'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 w-full bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 w-full text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-                                    <PiChatsCircleBold className="text-[20px]" />
+                                    <LuMessageCircle className="text-[20px]" />
                                     <span className="flex items-center gap-3"> Messenger</span>
                                 </NavLink>
                             </button>
@@ -78,11 +87,11 @@ const Dashboard = () => {
                                     to='/dashboard/d'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <IoPricetagsOutline className="text-[20px]" />
+                                    <GoListUnordered className="text-[20px]" />
                                     <span> Order Lists</span>
                                 </NavLink>
                             </button>
@@ -91,25 +100,26 @@ const Dashboard = () => {
                                     to='/dashboard/e'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <PiNotePencilThin className="text-[20px]" />
+                                    <MdOutlineBusiness className="text-[20px]" />
                                     <span> E-commerce</span>
                                 </NavLink>
                             </button>
-                            <h1 className="ml-5">PAGES</h1>
+                            <div className="divider"></div>
+                            <h1 className="ml-5 my-5">PAGES</h1>
                             <button>
                                 <NavLink
                                     to='/dashboard/f'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <CiFileOn className="text-[20px]" />
                                     <span> File Manager</span>
                                 </NavLink>
                             </button>
@@ -118,11 +128,11 @@ const Dashboard = () => {
                                     to='/dashboard/g'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <CiCalendar className="text-[20px]" />
                                     <span> Calendar</span>
                                 </NavLink>
                             </button>
@@ -131,11 +141,11 @@ const Dashboard = () => {
                                     to='/dashboard/g'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <MdOutlineFeed className="text-[20px]" />
                                     <span> Feed</span>
                                 </NavLink>
                             </button>
@@ -144,11 +154,11 @@ const Dashboard = () => {
                                     to='/dashboard/h'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <LuListTodo className="text-[20px]" />
                                     <span> To-Do</span>
                                 </NavLink>
                             </button>
@@ -157,11 +167,11 @@ const Dashboard = () => {
                                     to='/dashboard/i'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <MdContactPage className="text-[20px]" />
                                     <span> Contact</span>
                                 </NavLink>
                             </button>
@@ -170,11 +180,11 @@ const Dashboard = () => {
                                     to='/dashboard/j'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <TbInvoice className="text-[20px]" />
                                     <span> Invoice</span>
                                 </NavLink>
                             </button>
@@ -183,11 +193,11 @@ const Dashboard = () => {
                                     to='/dashboard/k'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <LiaElementor className="text-[20px]" />
                                     <span> UI Elements</span>
                                 </NavLink>
                             </button>
@@ -196,11 +206,11 @@ const Dashboard = () => {
                                     to='/dashboard/l'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <CgProfile className="text-[20px]" />
                                     <span> Profile</span>
                                 </NavLink>
                             </button>
@@ -209,11 +219,11 @@ const Dashboard = () => {
                                     to='/dashboard/m'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+                                    <CiViewTable className="text-[20px]" />
                                     <span> Table</span>
                                 </NavLink>
                             </button>
@@ -224,10 +234,11 @@ const Dashboard = () => {
                                         to='/dashboard/n'
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                                : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                                ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                                : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
+                                        <IoIosHelpCircleOutline className="text-[20px]" />
                                         <span> Help</span>
                                     </NavLink>
                                 </button>
@@ -236,10 +247,11 @@ const Dashboard = () => {
                                         to='/dashboard/o'
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                                : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                                ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                                : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
+                                        <CiLogout className="text-[20px]" />
                                         <span> Log out</span>
                                     </NavLink>
                                 </button>
@@ -252,12 +264,11 @@ const Dashboard = () => {
             </div>
             {/* dahsboard content */}
 
+
            
             <div className="w-full h-screen overflow-y-scroll bg-[#f3f4f7] border px-4">
                 <DashNav></DashNav>
                 <div className="mt-20">
-
-                
                     <Outlet></Outlet>
                 </div>
             </div>
