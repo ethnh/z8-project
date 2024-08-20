@@ -5,6 +5,12 @@ import { FaBars } from "react-icons/fa";
 
 import { IoSearchOutline } from "react-icons/io5";
 import { IoNotifications } from "react-icons/io5";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { RiSettings3Line } from "react-icons/ri";
+import { MdEvent } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { IoAlert } from "react-icons/io5";
+
 
 
 
@@ -45,7 +51,7 @@ const DashNav = () => {
                         </ul>
                     </div>
                     <FaBars className="text-[25px] mx-4 cursor-pointer text-[#575A5E]"></FaBars>
-                    <div className="w-3/4 relative mx-5">
+                    <div className="w-4/5 relative mx-5">
                         <SearchInput type="text" className="py-[7px] bg-[#D1D9E2]" placeholder="Search..." /> <IoSearchOutline className="absolute left-3 bottom-[10px] text-[#797E84] cursor-pointer text-lg" ></IoSearchOutline>
                     </div>
                 </div>
@@ -93,6 +99,58 @@ const DashNav = () => {
                         <div>
                             <h1 className="text-[17px] font-semibold">Mony Roy</h1>
                             <p className="text-[12px]">Admin</p>
+                        </div>
+                        <div>
+
+                            <div className="dropdown dropdown-bottom dropdown-end">
+                                <div tabIndex={0} role="button" className="">
+                                    <div className="size-5 rounded-full outline outline-[1px] outline-[#BCC1C5] cursor-pointer flex justify-center items-center">
+                                        <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown>
+                                    </div>
+                                </div>
+                                <div tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] lg:w-[300px] p-4 shadow mt-6  my-4">
+                                    <div>
+                                        <h1 className="text-lg font-semibold">Notification</h1>
+                                        <div className="divider"></div>
+                                        <div className="flex items-center gap-4 cursor-pointer my-4">
+                                            <div className="size-11 bg-[#63ABFE] rounded-full flex justify-center items-center">
+                                                <RiSettings3Line className="text-[24px] text-white"></RiSettings3Line>
+                                            </div>
+                                            <div>
+                                                <h1 className="text-base font-semibold">Settings</h1>
+                                                <p className="text-[#B8B8B8]">Update Dashboard</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-center gap-4 cursor-pointer my-4">
+                                            <div className="size-11 bg-[#FC9BDF] rounded-full flex justify-center items-center">
+                                                <MdEvent className="text-[24px] text-white"></MdEvent>
+                                            </div>
+                                            <div>
+                                                <h1 className="text-base font-semibold">Event Update</h1>
+                                                <p className="text-[#B8B8B8]">An event date update again</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-center gap-4 cursor-pointer my-4">
+                                            <div className="size-11 bg-[#BCA6FF] rounded-full flex justify-center items-center">
+                                                <CgProfile className="text-[24px] text-white"></CgProfile>
+                                            </div>
+                                            <div>
+                                                <h1 className="text-base font-semibold">Profile</h1>
+                                                <p className="text-[#B8B8B8]">Update your profile</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-center gap-4 cursor-pointer my-4">
+                                            <div className="size-11 bg-[#FFA5A5] rounded-full flex justify-center items-center">
+                                                <IoAlert className="text-[24px] text-white"></IoAlert>
+                                            </div>
+                                            <div>
+                                                <h1 className="text-base font-semibold">Application Error</h1>
+                                                <p className="text-[#B8B8B8]">Check your running application</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
