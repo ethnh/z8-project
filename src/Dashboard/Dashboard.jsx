@@ -1,5 +1,22 @@
 import { NavLink, Outlet } from "react-router-dom";
 import DashNav from "./DashNav";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { AiOutlineProduct } from "react-icons/ai";
+import { GrFavorite } from "react-icons/gr";
+import { LuMessageCircle } from "react-icons/lu";
+import { GoListUnordered } from "react-icons/go";
+import { MdOutlineBusiness } from "react-icons/md";
+import { CiFileOn } from "react-icons/ci";
+import { CiCalendar } from "react-icons/ci";
+import { MdOutlineFeed } from "react-icons/md";
+import { LuListTodo } from "react-icons/lu";
+import { MdContactPage } from "react-icons/md";
+import { TbInvoice } from "react-icons/tb";
+import { LiaElementor } from "react-icons/lia";
+import { CgProfile } from "react-icons/cg";
+import { CiViewTable } from "react-icons/ci";
+import { IoIosHelpCircleOutline } from "react-icons/io";
+import { CiLogout } from "react-icons/ci";
 
 
 const Dashboard = () => {
@@ -22,7 +39,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-                                    {/* <MdOutlineDashboard className="text-[20px]" /> */}
+                                    <LuLayoutDashboard className="text-[20px]" />
                                     <span>Dashboard</span>
                                 </NavLink>
                             </button>
@@ -35,7 +52,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <AiOutlineProduct className="text-[20px]" />
                                     <span> Products</span>
                                 </NavLink>
                             </button>
@@ -48,7 +65,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <GrFavorite className="text-[20px]" />
                                     <span> Favourites</span>
                                 </NavLink>
                             </button>
@@ -61,7 +78,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-
+                                    <LuMessageCircle className="text-[20px]" />
                                     <span className="flex items-center gap-3"> Messenger</span>
                                 </NavLink>
                             </button>
@@ -74,7 +91,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <GoListUnordered className="text-[20px]" />
                                     <span> Order Lists</span>
                                 </NavLink>
                             </button>
@@ -87,7 +104,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <MdOutlineBusiness className="text-[20px]" />
                                     <span> E-commerce</span>
                                 </NavLink>
                             </button>
@@ -102,7 +119,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <CiFileOn className="text-[20px]" />
                                     <span> File Manager</span>
                                 </NavLink>
                             </button>
@@ -115,7 +132,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <CiCalendar className="text-[20px]" />
                                     <span> Calendar</span>
                                 </NavLink>
                             </button>
@@ -128,7 +145,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <MdOutlineFeed className="text-[20px]" />
                                     <span> Feed</span>
                                 </NavLink>
                             </button>
@@ -141,7 +158,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <LuListTodo className="text-[20px]" />
                                     <span> To-Do</span>
                                 </NavLink>
                             </button>
@@ -154,7 +171,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <MdContactPage className="text-[20px]" />
                                     <span> Contact</span>
                                 </NavLink>
                             </button>
@@ -167,7 +184,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <TbInvoice className="text-[20px]" />
                                     <span> Invoice</span>
                                 </NavLink>
                             </button>
@@ -180,7 +197,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <LiaElementor className="text-[20px]" />
                                     <span> UI Elements</span>
                                 </NavLink>
                             </button>
@@ -193,7 +210,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <CgProfile className="text-[20px]" />
                                     <span> Profile</span>
                                 </NavLink>
                             </button>
@@ -206,7 +223,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-
+                                    <CiViewTable className="text-[20px]" />
                                     <span> Table</span>
                                 </NavLink>
                             </button>
@@ -221,6 +238,7 @@ const Dashboard = () => {
                                                 : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
+                                        <IoIosHelpCircleOutline className="text-[20px]" />
                                         <span> Help</span>
                                     </NavLink>
                                 </button>
@@ -233,6 +251,7 @@ const Dashboard = () => {
                                                 : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
+                                        <CiLogout className="text-[20px]" />
                                         <span> Log out</span>
                                     </NavLink>
                                 </button>
