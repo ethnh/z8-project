@@ -5,17 +5,17 @@ const Card = ({ title, value, change, changeType, icon: Icon, iconBgColor, iconC
   const [changeValue, ...changePeriod] = change.split(' ');
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow-sm w-52 h-36 ">
+    <div className="bg-white p-5 rounded-xl shadow-sm w-[90%] h-[167px]">
       <div className="flex justify-between items-center  ">
-<div className='mt-[-36px]'>
-<h4 className="text-gray-500  font-semibold text-sm  ">{title}</h4>
-</div>
-        <div className={`p-2 py-3 rounded-2xl border ${iconBgColor}`}>
-          <Icon className={`text-2xl ${iconColor}`} />
+        <div className='mt-[-36px]'>
+          <h4 className="text-gray-500  font-semibold text-sm">{title}</h4>
+        </div>
+        <div className={`p-2 py-[13px] rounded-2xl border ${iconBgColor}`}>
+          <Icon className={`text-4xl ${iconColor}`} />
         </div>
       </div>
       <p className="text-2xl font-bold mb-4 mt-[-18px]">{value}</p>
-      <div className="flex items-center text-xs mt-8">
+      <div className="flex items-center text-sm mt-8">
         {isIncrease ? (
           <IoMdArrowDropup className="text-green-500 text-lg" />
         ) : (
