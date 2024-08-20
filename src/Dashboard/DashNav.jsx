@@ -1,24 +1,17 @@
-import { FaUser } from "react-icons/fa";
-import { BsSearch } from "react-icons/bs";
-import { PiBellSimpleRingingLight } from "react-icons/pi";
+
+import { HiBars3 } from "react-icons/hi2";
 import SearchInput from "../Shared/SearchInput";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+
+import { IoSearchOutline } from "react-icons/io5";
 
 
 
 
 const DashNav = () => {
-    const [isLightMode, setIsLightMode] = useState(true);
-    const notification = true;
-
-    const toggleMode = () => {
-        setIsLightMode(!isLightMode);
-    };
-
     return (
         <>
-            <div className="fixed navbar flex w-[84.051%] justify-between items-center h-16 z-10 bg-white bordertext-black rounded-2xl p-2">
+            <div className="fixed navbar flex w-[86.051%] justify-between items-center h-16 z-10 bg-[#dae1e671] border text-black p-2">
                 <div className="navbar-start w-[40%]">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,12 +42,15 @@ const DashNav = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="text-[20px] font-[700]">Dashboard</a>
+                    <FaBars className="text-[25px] mx-4 cursor-pointer text-[#575A5E]"></FaBars>
+                    <div className="w-full relative mx-5">
+                        <SearchInput type="text" className="py-[7px] bg-[#D1D9E2]" placeholder="Search..." /> <IoSearchOutline className="absolute left-3 bottom-[10px] text-[#797E84] cursor-pointer text-lg" ></IoSearchOutline>
+                    </div>
                 </div>
                 <div className="navbar-center w-[30%] hidden lg:flex justify-center">
-                    <div className="w-full relative">
+                    {/* <div className="w-full relative">
                         <SearchInput type="text" className="py-[7px]" placeholder="Search..." /> <BsSearch className="absolute right-3 bottom-[9px] text-[#000000] cursor-pointer" ></BsSearch>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="navbar-end w-[40%]">
 

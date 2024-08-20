@@ -1,24 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
 import DashNav from "./DashNav";
-import { HiOutlineSquares2X2 } from "react-icons/hi2";
-import { RiContactsBook2Line } from "react-icons/ri";
-import { PiTicket } from "react-icons/pi";
-import { PiChatsCircleBold } from "react-icons/pi";
-import { HiOutlineUsers } from "react-icons/hi2";
-import { PiNotePencilThin } from "react-icons/pi";
-import { IoPricetagsOutline } from "react-icons/io5";
 
 
 const Dashboard = () => {
     const isAdmin = true;
-    const chat = true;
     return (
         <div className="lg:flex">
             <div className="lg:w-56 lg:h-screen overflow-y-scroll no-scrollbar bg-[#FFFFFF]">
-                <div className="my-7 ml-6 text-[#FFFFFF] text-lg">
-                    <h1 className="text-black"><span className="text-[#3048DF]">Dash</span>Stack</h1>
+                <div className="my-7 text-center text-[#FFFFFF] text-lg">
+                    <h1 className="text-[#202224] text-[20px] font-bold"><span className="text-[#3048DF]">Dash</span>Stack</h1>
                 </div>
-                <div className="menu p-0 space-y-3">
+                <div className="menu space-y-3 p-4">
                     {
                         isAdmin ? <>
                             <button>
@@ -26,11 +18,11 @@ const Dashboard = () => {
                                     to="/dashboard/dashboardHome"
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 w-full bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 w-full text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full rounded-md bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineSquares2X2 className="text-[20px]" />
+                                    {/* <MdOutlineDashboard className="text-[20px]" /> */}
                                     <span>Dashboard</span>
                                 </NavLink>
                             </button>
@@ -39,11 +31,11 @@ const Dashboard = () => {
                                     to='/dashboard/a'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <RiContactsBook2Line className="text-[20px]" />
+
                                     <span> Products</span>
                                 </NavLink>
                             </button>
@@ -52,11 +44,11 @@ const Dashboard = () => {
                                     to='/dashboard/b'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <PiTicket className="text-[20px]" />
+
                                     <span> Favourites</span>
                                 </NavLink>
                             </button>
@@ -65,11 +57,11 @@ const Dashboard = () => {
                                     to='/dashboard/c'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 w-full bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 w-full text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full text-[#202224]"
                                     }
                                 >
-                                    <PiChatsCircleBold className="text-[20px]" />
+
                                     <span className="flex items-center gap-3"> Messenger</span>
                                 </NavLink>
                             </button>
@@ -78,11 +70,11 @@ const Dashboard = () => {
                                     to='/dashboard/d'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <IoPricetagsOutline className="text-[20px]" />
+
                                     <span> Order Lists</span>
                                 </NavLink>
                             </button>
@@ -91,25 +83,26 @@ const Dashboard = () => {
                                     to='/dashboard/e'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <PiNotePencilThin className="text-[20px]" />
+
                                     <span> E-commerce</span>
                                 </NavLink>
                             </button>
-                            <h1 className="ml-5">PAGES</h1>
+                            <div className="divider"></div>
+                            <h1 className="ml-5 my-5">PAGES</h1>
                             <button>
                                 <NavLink
                                     to='/dashboard/f'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> File Manager</span>
                                 </NavLink>
                             </button>
@@ -118,11 +111,11 @@ const Dashboard = () => {
                                     to='/dashboard/g'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Calendar</span>
                                 </NavLink>
                             </button>
@@ -131,11 +124,11 @@ const Dashboard = () => {
                                     to='/dashboard/g'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Feed</span>
                                 </NavLink>
                             </button>
@@ -144,11 +137,11 @@ const Dashboard = () => {
                                     to='/dashboard/h'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> To-Do</span>
                                 </NavLink>
                             </button>
@@ -157,11 +150,11 @@ const Dashboard = () => {
                                     to='/dashboard/i'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Contact</span>
                                 </NavLink>
                             </button>
@@ -170,11 +163,11 @@ const Dashboard = () => {
                                     to='/dashboard/j'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Invoice</span>
                                 </NavLink>
                             </button>
@@ -183,11 +176,11 @@ const Dashboard = () => {
                                     to='/dashboard/k'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> UI Elements</span>
                                 </NavLink>
                             </button>
@@ -196,11 +189,11 @@ const Dashboard = () => {
                                     to='/dashboard/l'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Profile</span>
                                 </NavLink>
                             </button>
@@ -209,11 +202,11 @@ const Dashboard = () => {
                                     to='/dashboard/m'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                            : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                            ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                            : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <HiOutlineUsers className="text-[20px]" />
+
                                     <span> Table</span>
                                 </NavLink>
                             </button>
@@ -224,8 +217,8 @@ const Dashboard = () => {
                                         to='/dashboard/n'
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                                : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                                ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                                : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
                                         <span> Help</span>
@@ -236,8 +229,8 @@ const Dashboard = () => {
                                         to='/dashboard/o'
                                         className={({ isActive }) =>
                                             isActive
-                                                ? "flex items-center gap-2 justify-start pl-6 py-2 bg-[#3E00F6] text-black"
-                                                : "flex items-center gap-2 justify-start pl-6 py-2 text-black"
+                                                ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
+                                                : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                         }
                                     >
                                         <span> Log out</span>
@@ -251,7 +244,7 @@ const Dashboard = () => {
                 </div>
             </div>
             {/* dahsboard content */}
-            <div className="w-full h-screen overflow-y-scroll bg-[#f3f4f7] border px-4">
+            <div className="w-full h-screen overflow-y-scroll bg-[#f3f4f7] border">
                 <DashNav></DashNav>
                 <div className="mt-20">
                     <Outlet></Outlet>
