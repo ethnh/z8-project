@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import DashNav from "./DashNav";
 import { LuLayoutDashboard } from "react-icons/lu";
-import { AiOutlineProduct } from "react-icons/ai";
+// import { AiOutlineProduct } from "react-icons/ai";
 import { GrFavorite } from "react-icons/gr";
 import { LuMessageCircle } from "react-icons/lu";
 import { GoListUnordered } from "react-icons/go";
@@ -11,7 +11,7 @@ import { CiCalendar } from "react-icons/ci";
 import { MdOutlineFeed } from "react-icons/md";
 import { LuListTodo } from "react-icons/lu";
 import { MdContactPage } from "react-icons/md";
-import { TbInvoice } from "react-icons/tb";
+// import { TbInvoice } from "react-icons/tb";
 import { LiaElementor } from "react-icons/lia";
 import { CgProfile } from "react-icons/cg";
 import { CiViewTable } from "react-icons/ci";
@@ -52,7 +52,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <AiOutlineProduct className="text-[20px]" />
+                                    {/* <AiOutlineProduct className="text-[20px]" /> */}
                                     <span> Products</span>
                                 </NavLink>
                             </button>
@@ -184,7 +184,7 @@ const Dashboard = () => {
                                             : "flex items-center gap-2 justify-start pl-6 py-3 font-semibold text-[#202224]"
                                     }
                                 >
-                                    <TbInvoice className="text-[20px]" />
+                                    {/* <TbInvoice className="text-[20px]" /> */}
                                     <span> Invoice</span>
                                 </NavLink>
                             </button>
