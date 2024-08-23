@@ -2,11 +2,16 @@
 import { FaUsers, FaBoxOpen, FaChartLine, FaClock } from 'react-icons/fa';
 import Card from '../../Component/Card/Card';
 import SalesDetails from '../../Component/Sales/Sales';
-import PermissionsTable from '../../Component/Table/table';
+
+
+
+
+import PermissionsTable from '../../Component/Table/PermissionsTable';
+
 
 const DashboardHome = () => {
   return (
-    <div className="bg-gray-100 p-7">
+    <div className="bg-gray-100 p-9">
       <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
   <Card
@@ -53,6 +58,8 @@ const DashboardHome = () => {
       <div className='mt-12'>
         <PermissionsTable></PermissionsTable>
       </div>
+
+
     </div>
   );
 };

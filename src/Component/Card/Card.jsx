@@ -5,7 +5,7 @@ const Card = ({ title, value, change, changeType, icon: Icon, iconBgColor, iconC
   const [changeValue, ...changePeriod] = change.split(' ');
 
   return (
-    <div className="bg-white p-2 rounded-xl shadow-sm  sm:w-[90%] h-[180px]">
+    <div className="bg-white p-3 rounded-xl shadow-sm   sm:w-[90%] h-[160px]">
       <div className="flex justify-between items-center">
         <div className="mt-[-24px]">
           <h4 className="text-gray-500 font-semibold text-sm mb-2">{title}</h4>
@@ -14,8 +14,8 @@ const Card = ({ title, value, change, changeType, icon: Icon, iconBgColor, iconC
           <Icon className={`text-4xl ${iconColor}`} />
         </div>
       </div>
-      <p className="text-[26px] font-bold mb-4 mt-[-18px]">{value}</p>
-      <div className="flex items-center text-sm mt-12">
+      <p className="text-[30px]  font-[900] mb-4 mt-[-18px]">{value}</p>
+      <div className="flex items-center text-sm mt-6">
         {isIncrease ? (
           <IoMdArrowDropup className="text-green-500 text-xl" />
         ) : (

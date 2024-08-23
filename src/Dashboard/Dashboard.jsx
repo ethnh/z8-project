@@ -71,7 +71,8 @@ const Dashboard = () => {
                             </button>
                             <button>
                                 <NavLink
-                                    to='/dashboard/c'
+                                    to='/dashboard/messenger'
+            
                                     className={({ isActive }) =>
                                         isActive
                                             ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold w-full bg-[#447BF5] text-white"
@@ -151,7 +152,7 @@ const Dashboard = () => {
                             </button>
                             <button>
                                 <NavLink
-                                    to='/dashboard/h'
+                                    to='/dashboard/todo'
                                     className={({ isActive }) =>
                                         isActive
                                             ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"
@@ -216,7 +217,7 @@ const Dashboard = () => {
                             </button>
                             <button>
                                 <NavLink
-                                    to='/dashboard/m'
+                                    to='/dashboard/table'
                                     className={({ isActive }) =>
                                         isActive
                                             ? "flex items-center gap-2 justify-start pl-6 py-3 font-semibold bg-[#447BF5] text-white"

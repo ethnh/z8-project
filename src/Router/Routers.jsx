@@ -7,6 +7,10 @@ import Dashboard from "../Dashboard/Dashboard";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DashboardHome from "../Pages/DashboardHome/DashboardHome";
 
+import Messenger from "../Dashboard/Messenger/Messenger";
+import TablePage from "../Pages/Table/TablePage";
+import PermissionsTable from "../Component/Table/PermissionsTable";
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -26,6 +30,19 @@ export const router = createBrowserRouter([
             {
                 path: 'dashboardHome',
                 element: <DashboardHome></DashboardHome>
+            },
+
+            {
+                path: 'table',
+                element: <TablePage></TablePage>
+            },
+            {
+                path: 'messenger',
+                element: <Messenger></Messenger>
+            },
+            {
+                path: 'todo',
+                element:<PermissionsTable></PermissionsTable>
             },
         ]
     }
