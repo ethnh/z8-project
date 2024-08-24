@@ -5,7 +5,7 @@ import PricingBtn from "../../Shared/PricingBtn";
 
 const PricingCard = ({ title, price, pragraph, btn, listOne, listTwo, CardTwoLists }) => {
     return (
-        <div className="card card-compact">
+        <div className="card rounded-md hover:duration-500 hover:bg-gradient-to-b from-[#d7edf6] to-white cursor-pointer">
             <div className="p-6">
                 <span className="px-3 py-1 rounded-3xl text-[#161616] font-semibold text-base border border-[#D5E1E3]">{title}</span>
                 <h1 className="text-[#161616] text-4xl font-bold my-6">{price}</h1>

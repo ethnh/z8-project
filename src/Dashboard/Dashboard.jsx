@@ -151,7 +151,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                             <div>
-                                <h1 className="text-[17px] font-semibold">Mony Roy</h1>
+                                <h1 className="text-[14px] font-bold">Mony Roy</h1>
                                 <p className="text-[12px]">Admin</p>
                             </div>
                             <div>
