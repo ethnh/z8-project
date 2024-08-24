@@ -11,6 +11,7 @@ import Messenger from "../Dashboard/Messenger/Messenger";
 import TablePage from "../Pages/Table/TablePage";
 import PermissionsTable from "../Component/Table/PermissionsTable";
 import Pricing from "../Pages/Pricing/Pricing";
+import BillingInformation from "../Pages/BillingInformation/BillingInformation";
 
 export const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
             {
                 path: 'pricing',
                 element: <Pricing></Pricing>
+            },
+            {
+                path: 'billingInformation',
+                element: <BillingInformation></BillingInformation>
             }
         ]
     }

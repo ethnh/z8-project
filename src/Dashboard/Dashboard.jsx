@@ -21,6 +21,7 @@ import { FaBars } from "react-icons/fa";
 import { RiSettings3Line } from "react-icons/ri";
 import { IoBusinessOutline } from "react-icons/io5";
 import { IoPricetagsOutline } from "react-icons/io5";
+import { MdOutlineMedicalInformation } from "react-icons/md";
 import { IoAlert, IoNotifications, IoSearchOutline } from "react-icons/io5";
 import SearchInput from "../Shared/SearchInput";
 import logo from '../assets/logoDashboard.png'
@@ -38,6 +39,7 @@ const Dashboard = () => {
         { title: "Table", icon: <CiViewTable />, path: "/dashboard/table" },
         { title: "To-Do", icon: <LuListTodo />, path: "/dashboard/todo" },
         { title: "Pricing", icon: <IoPricetagsOutline />, path: "/dashboard/pricing" },
+        { title: "Billing", icon: <MdOutlineMedicalInformation />, path: "/dashboard/billingInformation" },
         { title: "Products", icon: <AiOutlineProduct />, path: "/dashboard/a" },
         { title: "Favourite", icon: <GrFavorite />, path: "/dashboard/i" },
         { title: "Order Lists ", icon: <GoListUnordered />, path: "/dashboard/d" },
