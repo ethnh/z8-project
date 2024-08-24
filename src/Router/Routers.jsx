@@ -10,6 +10,7 @@ import DashboardHome from "../Pages/DashboardHome/DashboardHome";
 import Messenger from "../Dashboard/Messenger/Messenger";
 import TablePage from "../Pages/Table/TablePage";
 import PermissionsTable from "../Component/Table/PermissionsTable";
+import Pricing from "../Pages/Pricing/Pricing";
 
 export const router = createBrowserRouter([
     {
@@ -42,8 +43,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'todo',
-                element:<PermissionsTable></PermissionsTable>
+                element: <PermissionsTable></PermissionsTable>
             },
+            {
+                path: 'pricing',
+                element: <Pricing></Pricing>
+            }
         ]
     }
 ]);

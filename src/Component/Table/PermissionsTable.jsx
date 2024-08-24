@@ -5,7 +5,7 @@ const initialPermissions = [
     name: 'Orders',
     permissions: { view: true, create: false, modify: true, cancel: false, delete: true },
     subPermissions: [
-     
+
       { name: 'Authorised Purchase Order', permissions: { view: false, create: false, modify: false, cancel: false, delete: false } },
       { name: 'Credit Note', permissions: { view: true, create: true, modify: true, cancel: true, delete: true } },
     ],
